@@ -1,0 +1,7 @@
+Scrapy==2.5.0
+SQLAlchemy==1.4.23
+dateparser==1.0.0
+bs4==0.0.1
+postgres==3.0.0
+psycopg2-binary==1.1
+
