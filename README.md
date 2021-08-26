@@ -28,7 +28,7 @@ CSS-selectors are used for extracting data from web-pages.
 Sample log:
 
 ![log1](/images/log1.png)
-![log1](/images/log2.png)
+![log2](/images/log2.png)
 
 ### *Optional*
 *A part of the spider's code may be uncommented with the spider settings "ROBOTSTXT_OBEY" set to False for getting number of post views (wheather use it or not is up to you, but it's actually disallowed by hse robots.txt).*
@@ -40,7 +40,7 @@ PostgreSQL + SQLAlchemy are used in this project.
 The database is designed in a way that the tables have one-to many and many-to-many relations.
 
 Here's the DB schema:
-![log1](https://raw.github.com/posavinova/news-hse/main/images/news_hse.png)
+![db_schema](/images/news_hse.png)
 
 Configure your database settings in a separate file (secrets.py):
 ```python
@@ -59,10 +59,10 @@ Apart from saving scraped items to the DB, pipelines take care of dropping dupli
 ## Building social network
 
 The data set I use is a CSV spreadsheet with 558 scraped posts.
-![log1](https://raw.github.com/posavinova/news-hse/main/images/news_table.png)
+![csv](/images/news_table.png)
 
 To create a social graph within a list of people, mentioned in HSE news posts, we'll use spaCy for NER and NetworkX to bind nodes and edges.
-![log1](https://raw.github.com/posavinova/news-hse/main/images/graph.png)
+![graph](/images/graph.png)
 Display top-mentioned names:
 
 ```
